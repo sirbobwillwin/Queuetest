@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="refresh" content="60;url=https://www.youtube.com/">
+    <title>Test Queue Page</title>
+</head>
+<body>
+    <h1>Wait Here</h1>
+    <p>This page will redirect in 60 seconds.</p>
+    <div id="timer">60</div>
+    <script>
+      let time = 60;
+      let el = document.getElementById('timer');
+      setInterval(() => {
+        time--;
+        el.textContent = time;
+      }, 1000);
+    </script>
+</body>
+</html>
